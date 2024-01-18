@@ -1,0 +1,24 @@
+package ch01;
+
+public class ConsoleIO {
+
+	public static void main(String[] args) {
+		
+		// 콘솔 출력
+		// System 클래스의 out 객체의 print(), println()
+		// print() : 출력이 끝나고 줄바꿈을 하지 않음
+		// println() : 출력이 끝나고 줄바꿈을 진행 함
+		String name = "John Doe";
+		System.out.print(name);
+		System.out.print();
+		System.out.print(name);
+		
+	
+	
+	
+	
+	
+	
+	}
+
+}

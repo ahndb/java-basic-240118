@@ -1,0 +1,23 @@
+package ch01;
+
+public class B_Datatype {
+
+	public static void main(String[] args) {
+		
+		// 기본형 데이터 타입
+		
+		// 정수형 데이터 타입: 실수부가 없는 정수를 나타냄
+		// byte: 1byte(8bit)의 크기를 가지는 정수형 데이터 타입
+		// -128 ~ 127
+		byte byte1 = 127;
+		byte byte2 = 128;
+		
+		// 정수형 데이터 타입
+		// 정수형 데이터 타입
+		// 정수형 데이터 타입
+		
+		
+
+	}
+
+}
