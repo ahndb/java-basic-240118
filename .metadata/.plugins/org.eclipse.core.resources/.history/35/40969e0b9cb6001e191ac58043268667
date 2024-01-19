@@ -94,40 +94,12 @@ public class C_Operator {
 		// != : 좌항과 우항이 다르면 true, 같으면 false 
 		booleanResult = a == b;
 		System.out.println(booleanResult);
-		booleanResult = a != b;
-		System.out.println(booleanResult);
 		
-		String string = "Hello";
-		booleanResult = string == "Hello";
-		System.out.println(booleanResult);
 		
-		// 작다, 작거나 같다 연산
-		// < : 좌항이 우항보다 작으면 true, 같거나 크면 false
-		// <= : 좌항이 우항보다 작거나 같으면 true, 크면 false
-		booleanResult = a < c;
-		System.out.println(booleanResult);
-		booleanResult = a <= c;
-		System.out.println(booleanResult);
 		
-		// 크다, 크거나 같다 연산
-		// > : 좌항이 우항보다 크면 true, 같거나 작으면 false
-		// >= : 좌항이 우항보다 크거나 같으면 true, 작으면 false
-		booleanResult = a > c;
-		System.out.println(booleanResult);
-		booleanResult = a >= c;
-		System.out.println(booleanResult);
 		
-		// 논리 연산자: 피연산자가 모두 논리형태로 논리 값을 조합하는 것
-		// && : AND 연산 - 좌항과 우항이 모두 true면 true, 하나라도 false면 false
-		booleanResult = false && false;
-		System.out.println(booleanResult);
-		booleanResult = a < b && c > d;
-		System.out.println(booleanResult);
-		// || : OR 연산 - 좌항과 우항 중 하나라도 true면 true, 모두 false면 false
-		booleanResult = true || true;
-		System.out.println(booleanResult);
-		booleanResult = a < b || c > d;
-		System.out.println(booleanResult);
+		
+		
 		
 	}
 

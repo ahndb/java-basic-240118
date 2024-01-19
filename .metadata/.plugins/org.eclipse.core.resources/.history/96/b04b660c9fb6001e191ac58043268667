@@ -126,8 +126,7 @@ public class C_Operator {
 		// || : OR 연산 - 좌항과 우항 중 하나라도 true면 true, 모두 false면 false
 		booleanResult = true || true;
 		System.out.println(booleanResult);
-		booleanResult = a < b || c > d;
-		System.out.println(booleanResult);
+		
 		
 	}
 
