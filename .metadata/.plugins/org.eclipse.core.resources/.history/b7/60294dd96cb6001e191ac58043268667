@@ -85,11 +85,9 @@ public class B_Datatype {
 		numbers = new int[5];
 		System.out.println(numbers);
 		
-		int[] numbers2 = {1, 2, 3, 4, 5}; //초기화
-		int[] numbers3 = new int[] {1, 2, 3, 4, 5}; //생성과 동시에 초기화
-		System.out.println(numbers2);
-		System.out.println(numbers3);
- 		
+		
+		
+		
 		
 		
 		
