@@ -45,12 +45,6 @@ public class B_Datatype {
 		System.out.println(char1);
 		System.out.println(char2);
 		
-		// 논리형 데이터 타입: 참과 거짓 값을 가자 데이터 타입
-		// boolean: 1byte(8bit)의 크기를 가지는 논리형 데이터 타입
-		// true, false
-		boolean boolean1 = true;
-		boolean boolean2 = false;
-		
 		
 		
 		
