@@ -147,7 +147,7 @@ public class C_Operator {
 		
 		int age = scanner.nextInt();
 		
-		String stringResult = age > 19 ? "성인" : "미성년자"; //결과값에 맞는 연산자가 와야함, String 사용시 정수형 불가능
+		String stringResult = age > 19 ? "성인" : "미성년자";
 		System.out.println(stringResult);
 	}
 
