@@ -157,14 +157,14 @@ public class D_Control {
 			System.out.println("안녕하세요");
 		};
 		
-//		System.out.println("-1번 안녕하세요.");
-//		System.out.println("2번 안녕하세요.");
-//		System.out.println("5번 안녕하세요.");
-//		System.out.println("8번 안녕하세요.");
-//		System.out.println("11번 안녕하세요.");
+		System.out.println("1번 안녕하세요.");
+		System.out.println("2번 안녕하세요.");
+		System.out.println("3번 안녕하세요.");
+		System.out.println("4번 안녕하세요.");
+		System.out.println("5번 안녕하세요.");
 		
 		for (int count = 1; count <=5; count++) {
-			System.out.println(3*count-4 + "번 안녕하세요.");
+			System.out.println(count+"번 안녕하세요");
 		};
 		
 		

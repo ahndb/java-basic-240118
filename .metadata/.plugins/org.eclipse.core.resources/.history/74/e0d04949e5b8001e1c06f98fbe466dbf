@@ -80,7 +80,7 @@ public class D_Control {
 		};
 		*/
 		
-		int input = 5;
+		int input = scanner.nextInt();
 		// input이 0이면 ABC를 출력
 		// input이 1이면 BC
 		// input이 2이면 C
@@ -132,57 +132,6 @@ public class D_Control {
 		}
 		
 		// if문을 != 로 조건을 걸어 식이 간단해지게 만들기.
-		
-		System.out.println("====================================================");
-		System.out.println("====================================================");
-		
-		// 반복문: 특정 조건에 부합하면 지정한 코드를 여러 번 실행하도록 하는 것
-		
-		// for: 일반적 반복 횟수가 정해져있을 때 사용하는 반복문
-		// for (조건에사용할 변수초기화; 조건; 조건에사용할 변수증감){ 반복할 코드 }
-		
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-//		System.out.println("안녕하세요.");
-		// ... * 100
-		
-		for (int count = 1; count <= 3; count++) {
-			System.out.println("안녕하세요");
-		};
-		
-//		System.out.println("-1번 안녕하세요.");
-//		System.out.println("2번 안녕하세요.");
-//		System.out.println("5번 안녕하세요.");
-//		System.out.println("8번 안녕하세요.");
-//		System.out.println("11번 안녕하세요.");
-		
-		for (int count = 1; count <=5; count++) {
-			System.out.println(3*count-4 + "번 안녕하세요.");
-		};
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 

@@ -163,8 +163,8 @@ public class D_Control {
 //		System.out.println("8번 안녕하세요.");
 //		System.out.println("11번 안녕하세요.");
 		
-		for (int count = 1; count <=5; count++) {
-			System.out.println(3*count-4 + "번 안녕하세요.");
+		for (int count = -1; count <=11; count++) {
+			System.out.println(count + "번 안녕하세요.");
 		};
 		
 		
