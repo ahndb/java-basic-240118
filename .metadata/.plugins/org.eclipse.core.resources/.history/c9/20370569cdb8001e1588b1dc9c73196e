@@ -31,8 +31,8 @@ public class D_Control {
 		
 		System.out.println("프로그램을 종료");
 		
-		System.out.println("================================================");
-		System.out.println("================================================");
+		System.out.println("========================");
+		System.out.println("========================");
 		
 		// else: if 문의 조건-논리표현식이 false면 코드를 실행하도록 하는 것
 		// if (조건-논리표현식) { true이면 실행할 코드 }
