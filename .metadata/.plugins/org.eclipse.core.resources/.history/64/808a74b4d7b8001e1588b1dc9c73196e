@@ -131,8 +131,23 @@ public class D_Control {
 			System.out.println("F");
 		}
 		
-		// if문을 != 로 조건을 걸어 식이 간단해지게 만들기.
-		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

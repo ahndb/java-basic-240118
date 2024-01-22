@@ -76,7 +76,7 @@ public class D_Control {
 			변수-일반표현식이 값3과 같을때 시작할 코드 위치
 		default:
 			변수-일반표현식이 case의 값고 일치하는 것이 없거나 
-			바로 위에서 break문을 만나지 않으면 실행되는 코드(else가 아님.)
+			바로 위에서 break문을 만나지 않으면 실행되는 코드
 		};
 		*/
 		
@@ -104,35 +104,25 @@ public class D_Control {
 			System.out.println("F");
 		}
 		
-		// input이 0이면 A를 출력
-		// input이 1이면 B
-		// input이 2이면 C
-		// input이 3이면 D
-		// input이 4이면 E
-		// input이 0~4가 아니면 F
 		
-		switch (input) {
-		case 0:
-			System.out.println("A");
-			break;
-		case 1:
-			System.out.println("B");
-			break;
-		case 2:
-			System.out.println("C");
-			break;
-		case 3:
-			System.out.println("D");
-			break;
-		case 4:
-			System.out.println("E");
-			break;
-		default:
-			System.out.println("F");
-		}
-		
-		// if문을 != 로 조건을 걸어 식이 간단해지게 만들기.
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

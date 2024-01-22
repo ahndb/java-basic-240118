@@ -80,7 +80,7 @@ public class D_Control {
 		};
 		*/
 		
-		int input = scanner.nextInt();
+		int input1 = scanner.nextInt();
 		// input이 0이면 ABC를 출력
 		// input이 1이면 BC
 		// input이 2이면 C
@@ -111,7 +111,7 @@ public class D_Control {
 		// input이 4이면 E
 		// input이 0~4가 아니면 F
 		
-		switch (input) {
+		switch (input1) {
 		case 0:
 			System.out.println("A");
 			break;
@@ -131,8 +131,23 @@ public class D_Control {
 			System.out.println("F");
 		}
 		
-		// if문을 != 로 조건을 걸어 식이 간단해지게 만들기.
-		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
