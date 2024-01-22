@@ -254,8 +254,7 @@ public class D_Control {
 				continue;
 			}
 			if (input == 0) {
-				// break: 반복문에서 break문을 만나면 반복문을 종료
-				break;
+				return;
 			}
 				
 			System.out.println("입력 값 : " + input);
@@ -264,11 +263,6 @@ public class D_Control {
 		}
 		System.out.println("while 반복문 종료!");
 		
-		for (int index = 0; index < 10; index++) {
-			if (index % 3 == 0) continue;
-			if (index == 8) break;
-			System.out.println(index);
-		}
 		
 		
 		

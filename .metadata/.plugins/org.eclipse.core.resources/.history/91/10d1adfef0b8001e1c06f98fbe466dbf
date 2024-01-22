@@ -8,7 +8,7 @@ public class D_Control {
 		
 		// 제어문: 조건에 따라서 코드의 흐름을 결정하는 것
 		
-		Scanner scanner = new Scanner(System.in);
+//		Scanner scanner = new Scanner(System.in);
 		
 		// 조건문: 특정 조건이 만족하면 코드를 실행하는 것, 만족하지 않으면 실행하지 않음
 		
@@ -206,69 +206,19 @@ public class D_Control {
 //		numbers[3] = 4;
 //		numbers[4] = 5;
 		
-		for (int index = 0; index < numbers.length; index++) {
+		for (int index = 0; index <= 4; index++) {
 			numbers[index] = index + 1;
-		}
-		
-//			System.out.println(numbers[0]);
-//			System.out.println(numbers[1]);
-//			System.out.println(numbers[2]);
-//			System.out.println(numbers[3]);
-//			System.out.println(numbers[4]);
-		
-		// for (int index = 0; index < numbers.length; index++) {
-		//	System.out.println(numbers[index]);
-		// }
-		
-		// foreach: 컬렉션(배열)의 각 요소를 하나씩 변수에 '복사'하여 사용하는 반복문
-		
-		
-		// numbers: { 1, 2, 3, 4, 5 }
-		for (int number: numbers) {
-			System.out.println(number);
-		}
-		
-		System.out.println("------------------------");
-		
-		for (int number: numbers) {
-			number = 0;
-		} 
-		
-		// 직접 인덱스 값을 변경하려고 하는 것은 foreach문을 사용할 수 없음.
-//		for (int index = 0; index < numbers.length; index++) {
-//			numbers[index] = 0;
-//		}  
-		
-		for (int number: numbers) {
-			System.out.println(number);
-		}
-		
-		// while: 반복할 횟수가 정해져있지 않을 떄 사용하는 반복문
-		// 조건이 true인 동안 반복, 조건이 false가 되면 반복 종료
-		input = 1;
-		
-		while (input !=0) {
-			input = scanner.nextInt();
-			if (input % 2 != 0) {
-				// continue: 반복문에서 continue문을 만나면 앞 조건 검사가 아니라 뒤 조건 검사로 넘어감
-				continue;
-			}
-			if (input == 0) {
-				// break: 반복문에서 break문을 만나면 반복문을 종료
-				break;
-			}
-				
-			System.out.println("입력 값 : " + input);
-			System.out.println("while 반복문 실행중...");				
 			
+			System.out.println(numbers[index] = index + 1);
 		}
-		System.out.println("while 반복문 종료!");
 		
-		for (int index = 0; index < 10; index++) {
-			if (index % 3 == 0) continue;
-			if (index == 8) break;
-			System.out.println(index);
-		}
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -280,9 +230,5 @@ public class D_Control {
 		
 		
 	}
-		
-}	
-		
-		
 
-
+}

@@ -249,14 +249,7 @@ public class D_Control {
 		
 		while (input !=0) {
 			input = scanner.nextInt();
-			if (input % 2 != 0) {
-				// continue: 반복문에서 continue문을 만나면 앞 조건 검사가 아니라 뒤 조건 검사로 넘어감
-				continue;
-			}
-			if (input == 0) {
-				// break: 반복문에서 break문을 만나면 반복문을 종료
-				break;
-			}
+			if (input % 2 != 0) 
 				
 			System.out.println("입력 값 : " + input);
 			System.out.println("while 반복문 실행중...");				
@@ -264,11 +257,6 @@ public class D_Control {
 		}
 		System.out.println("while 반복문 종료!");
 		
-		for (int index = 0; index < 10; index++) {
-			if (index % 3 == 0) continue;
-			if (index == 8) break;
-			System.out.println(index);
-		}
 		
 		
 		
