@@ -1,0 +1,73 @@
+package ch02;
+
+// GalaxyPhone
+// 제조사: (maker - String)
+// 모델명: (modelName - String)
+// 소유자: (owner - String)
+// 전화번호: (telNumber - String)
+// 전원상태: (power - boolean)
+
+// 전원버튼누름: onPower - power 상태를 부정
+// 전화걸기: call - power가 true일 때 "(전화번호)로 전화를 겁니다." 출력
+// 긴급전화걸기: emergency - "112로 전화를 겁니다." 출력
+// 휴대전화정보보기: getInfomation - power가 true일 때  
+
+// ===== (전화번호) =====
+// 제조사: (제조사)
+// 모델명: (모델명)
+// 소유자: (소유자)
+//
+// 출력
+
+
+class GalaxyPhone {
+	
+	String maker;
+	String modelName;
+	String owner;
+	String telNumber;
+	boolean power;
+	
+	void onPower () {
+		if (power != true) {
+			return;
+		}
+	} 
+	
+	void call () {
+		if (power != true) {
+			System.out.println("(전화번호)로 전화를 겁니다.");
+		}
+	}
+	
+	void emergency () {
+		System.out.println("112로 전화를 겁니다.");
+	}
+	
+	void getInfomation () {
+		if (power != true) {
+			System.out.println(" ===== (전화번호) =====");
+			System.out.println("    제조사: " + maker);
+			System.out.println("    모델명: " + modelName); 
+			System.out.println("    소유자: " + owner); 
+		}
+	}
+	}
+
+public class A_Example {
+
+	public static void main(String[] args) {
+		
+		GalaxyPhone A = new GalaxyPhone();
+		
+		A.maker="SAM SUNG";
+		A.modelName="S24";
+		A.owner="ANNA";
+		A.telNumber="010 0000 0000";
+		A.power=true;
+		
+		A.emergency();
+		
+	}
+
+}

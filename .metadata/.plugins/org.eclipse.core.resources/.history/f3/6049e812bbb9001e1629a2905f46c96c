@@ -67,11 +67,7 @@ public class A_Example {
 		s24.telNumber="010-5678-1234";
 		s24.power=false;
 		
-		s23.onPower();
 		s23.getInfomation();
-		
-		s23.emergency();
-		s24.emergency();
 	}
 
 }

@@ -69,9 +69,6 @@ public class A_Example {
 		
 		s23.onPower();
 		s23.getInfomation();
-		
-		s23.emergency();
-		s24.emergency();
 	}
 
 }
