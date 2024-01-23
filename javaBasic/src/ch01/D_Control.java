@@ -247,7 +247,7 @@ public class D_Control {
 		// 조건이 true인 동안 반복, 조건이 false가 되면 반복 종료
 		input = 1;
 		
-		while (input !=0) {
+		while (input != 0) {
 			input = scanner.nextInt();
 			if (input % 2 != 0) {
 				// continue: 반복문에서 continue문을 만나면 앞 조건 검사가 아니라 뒤 조건 검사로 넘어감
