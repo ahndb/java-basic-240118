@@ -55,7 +55,7 @@ public class A_Example {
 		GalaxyPhone s23 = new GalaxyPhone(); // 인스턴스 생성하는 구문 (new 클래스명)
 		GalaxyPhone s24 = new GalaxyPhone();
 		
-		GalaxyPhone.maker = "LG";
+		GalaxyPhone.maker = "SAMSUNG";
 		
 		// s23.maker="SAMSUNG";
 		s23.modelName="s23";

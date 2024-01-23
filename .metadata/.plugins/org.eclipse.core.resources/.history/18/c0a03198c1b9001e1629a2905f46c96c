@@ -21,7 +21,7 @@ package ch02;
 
 class GalaxyPhone {
 	
-	static String maker;
+	String maker;
 	String modelName;
 	String owner;
 	String telNumber;
@@ -36,7 +36,7 @@ class GalaxyPhone {
 		System.out.println(toTelNumber + "로 전화를 겁니다."); // 특정 조건에서만 기능할 때 if 사용
 	}
 	
-	static void emergency () {
+	void emergency () {
 		System.out.println("112로 전화를 겁니다.");
 	}
 	
@@ -55,15 +55,13 @@ public class A_Example {
 		GalaxyPhone s23 = new GalaxyPhone(); // 인스턴스 생성하는 구문 (new 클래스명)
 		GalaxyPhone s24 = new GalaxyPhone();
 		
-		GalaxyPhone.maker = "LG";
-		
-		// s23.maker="SAMSUNG";
+		s23.maker="SAMSUNG";
 		s23.modelName="s23";
 		s23.owner="홍길동";
 		s23.telNumber="010-1234-5678";
 		s23.power=false;
 		
-		// s24.maker="SAMSUNG";
+		s24.maker="SAMSUNG";
 		s24.modelName="s24";
 		s24.owner="김철수";
 		s24.telNumber="010-5678-1234";

@@ -37,27 +37,10 @@ class ExampleClass1 {
 	}
 	// 4. 매개변수 : X, 반환값 : X
 	void method4 () {
-		System.out.println(attribute1);
-		System.out.println(staticAttribute);
 		
-		method2();
-		staticMethod();
 	}
 	// 매개변수O: 클래스 내부의 값만으로 처리를 못 할 경우 매개변수를 받아와야함
 	// 매개변수X: 그 결과를 외부에서 사용하느냐 마느냐로 void 사용
-	
-	// 클래스 메서드(스테틱 메서드, 정적 메서드)
-	// 모든 인스턴스가 공유하는 메서드
-	// 반환타입 앞에 static 키워드를 붙여서 사용
-	static void staticMethod() {
-		// static 메서드에서는 instance 변수 접근 및 instance 메서드 호출이 불가능
-		// System.out.println(attribute1);
-		System.out.println(staticAttribute);
-		
-		// method2();
-		staticMethod();
-	}
-	
 }
 
 // 축구선수	(FootballPlayer)
@@ -230,19 +213,9 @@ public class A_ClassAndObject {
 		
 		son.printInfomation();
 		
-		// static 변수는 클래스로 직접 접근이 가능
-		ExampleClass1.staticAttribute = 99; // 스테틱은 클래스에 직접 접근이 가능함
-	//	ExampleClass1.attribute1 = 10; // instance 변수와 메서드는 '반드시' 인스턴스를 생성하여 인스턴스로 접근 및 호출 가능
-	//	ExampleClass1.method1(0,0);  // instance 변수와 메서드는 '반드시' 인스턴스를 생성하여 인스턴스로 접근 및 호출 가능
 		instance1.staticAttribute = 99;
-		System.out.println(instance1.staticAttribute); // static은 1개만 설정이 되어도 다 공유함
+		System.out.println(instance1.staticAttribute);
 		System.out.println(instance2.staticAttribute);
-		
-		ExampleClass1.staticMethod();
-		instance1.staticMethod();
-		instance2.staticMethod();
-		
-		
 		
 	}
 
