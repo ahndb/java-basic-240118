@@ -89,21 +89,6 @@ class FootballPlayerA {
 	void moveTeam (String destinationTeam) {
 		team = destinationTeam;
 	}
-	
-	void printInfomation() {
-		System.out.println("=====================================");
-		System.out.println(name + "의 정보");
-		System.out.println("포지션 : " + position);		
-		System.out.println("생년월일 : " + birth);
-		System.out.println("키 : " + height);
-		System.out.println("몸무게 : " + weight);
-		System.out.println("국적 : " + country);
-		System.out.println("주발 : " + mainFoot);
-		System.out.println("소속팀 : " + team);
-		System.out.println("득점 : " + goal);
-		System.out.println("도움 : " + assist);
-		System.out.println("파울 : " + foul);
-	}
 }
 
 public class A_ClassAndObject {
@@ -185,25 +170,6 @@ public class A_ClassAndObject {
 		System.out.println("득점 : " + son.goal);
 		System.out.println("도움 : " + son.assist);
 		System.out.println("파울 : " + son.foul);
-		
-		lee.setGameResult(0, 1, 2);
-		
-		System.out.println(lee.name + "의 정보");
-		System.out.println("포지션 : " + lee.position);		
-		System.out.println("생년월일 : " + lee.birth);
-		System.out.println("키 : " + lee.height);
-		System.out.println("몸무게 : " + lee.weight);
-		System.out.println("국적 : " + lee.country);
-		System.out.println("주발 : " + lee.mainFoot);
-		System.out.println("소속팀 : " + lee.team);
-		System.out.println("득점 : " + lee.goal);
-		System.out.println("도움 : " + lee.assist);
-		System.out.println("파울 : " + lee.foul);
-		
-		lee.moveTeam("수원 삼성");
-		lee.printInfomation();
-		
-		son.printInfomation();
 		
 		
 	}

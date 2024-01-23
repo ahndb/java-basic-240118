@@ -24,7 +24,7 @@ class ExampleClass1 {
 		return 0;
 	}
 	// 3. 매개변수 : O, 반환값 : X
-	void method3 (int arg1) {
+	void method03 (int arg1) {
 		// void에서 return은 강제로 메서드를 종료하기위해 사용
 	}
 	// 4. 매개변수 : X, 반환값 : X
@@ -89,21 +89,6 @@ class FootballPlayerA {
 	void moveTeam (String destinationTeam) {
 		team = destinationTeam;
 	}
-	
-	void printInfomation() {
-		System.out.println("=====================================");
-		System.out.println(name + "의 정보");
-		System.out.println("포지션 : " + position);		
-		System.out.println("생년월일 : " + birth);
-		System.out.println("키 : " + height);
-		System.out.println("몸무게 : " + weight);
-		System.out.println("국적 : " + country);
-		System.out.println("주발 : " + mainFoot);
-		System.out.println("소속팀 : " + team);
-		System.out.println("득점 : " + goal);
-		System.out.println("도움 : " + assist);
-		System.out.println("파울 : " + foul);
-	}
 }
 
 public class A_ClassAndObject {
@@ -135,77 +120,45 @@ public class A_ClassAndObject {
 		
 		// 인스턴스가 가지고 있는 메서드 호출 방법
 		// 인스턴스.메서드();
-		instance1.method1(1, 2);
-		instance1.method2();
-		instance1.method3(1);
-		instance1.method4();
 		
-		FootballPlayerA son = new FootballPlayerA(); // 인스턴스1 생성
-		FootballPlayerA lee = new FootballPlayerA(); // 인스턴스2 생성
 		
-		son.name = "손흥민";
-		son.position = "공격수";
-		son.birth = "920708";
-		son.height = 183.0;
-		son.weight = 77.0;
-		son.country = "대한민국";
-		son.mainFoot = "오른발";
-		son.team = "토트넘 홋스퍼 FC";
-		son.goal = 0;
-		son.assist = 0;
-		son.foul = 0;
 		
-		lee.name = "이강인";
-		lee.position = "미들필더";
-		lee.birth = "010219";
-		lee.height = 174.0;
-		lee.weight = 71.0;
-		lee.country = "대한민국";
-		lee.mainFoot = "왼발";
-		lee.team = "파리 생제르맹 FC";
-		lee.goal = 0;
-		lee.assist = 0;
-		lee.foul = 0;
 		
-		son.sleep("21:00", "06:00");
-		son.eat("컵라면");
-		son.train();
 		
-		son.setGameResult(1, 1, 0);
-		son.moveTeam("아스날 FC");
 		
-		System.out.println(son.name + "의 정보");
-		System.out.println("포지션 : " + son.position);		
-		System.out.println("생년월일 : " + son.birth);
-		System.out.println("키 : " + son.height);
-		System.out.println("몸무게 : " + son.weight);
-		System.out.println("국적 : " + son.country);
-		System.out.println("주발 : " + son.mainFoot);
-		System.out.println("소속팀 : " + son.team);
-		System.out.println("득점 : " + son.goal);
-		System.out.println("도움 : " + son.assist);
-		System.out.println("파울 : " + son.foul);
 		
-		lee.setGameResult(0, 1, 2);
 		
-		System.out.println(lee.name + "의 정보");
-		System.out.println("포지션 : " + lee.position);		
-		System.out.println("생년월일 : " + lee.birth);
-		System.out.println("키 : " + lee.height);
-		System.out.println("몸무게 : " + lee.weight);
-		System.out.println("국적 : " + lee.country);
-		System.out.println("주발 : " + lee.mainFoot);
-		System.out.println("소속팀 : " + lee.team);
-		System.out.println("득점 : " + lee.goal);
-		System.out.println("도움 : " + lee.assist);
-		System.out.println("파울 : " + lee.foul);
 		
-		lee.moveTeam("수원 삼성");
-		lee.printInfomation();
 		
-		son.printInfomation();
+		
+		
+		
+		
+		
+		
+		
+
+
+		
+		
+		
+		
+		
+		
 		
 		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

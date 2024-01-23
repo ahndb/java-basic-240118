@@ -91,7 +91,6 @@ class FootballPlayerA {
 	}
 	
 	void printInfomation() {
-		System.out.println("=====================================");
 		System.out.println(name + "의 정보");
 		System.out.println("포지션 : " + position);		
 		System.out.println("생년월일 : " + birth);

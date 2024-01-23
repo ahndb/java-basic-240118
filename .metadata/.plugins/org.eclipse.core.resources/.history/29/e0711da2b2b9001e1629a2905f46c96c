@@ -91,7 +91,6 @@ class FootballPlayerA {
 	}
 	
 	void printInfomation() {
-		System.out.println("=====================================");
 		System.out.println(name + "의 정보");
 		System.out.println("포지션 : " + position);		
 		System.out.println("생년월일 : " + birth);
@@ -202,8 +201,6 @@ public class A_ClassAndObject {
 		
 		lee.moveTeam("수원 삼성");
 		lee.printInfomation();
-		
-		son.printInfomation();
 		
 		
 	}
