@@ -115,8 +115,6 @@ public class A_ClassAndObject {
 		instance1.attribute2 = 3.14;
 		System.out.println(instance1.attribute1);
 		System.out.println(instance1.attribute2);
-		System.out.println(instance2.attribute1);
-		System.out.println(instance2.attribute2);
 		
 		// 인스턴스가 가지고 있는 메서드 호출 방법
 		// 인스턴스.메서드();

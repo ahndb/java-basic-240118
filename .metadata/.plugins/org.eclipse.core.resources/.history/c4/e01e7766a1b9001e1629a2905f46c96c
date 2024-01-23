@@ -71,55 +71,25 @@ class FootballPlayerA {
 	void sleep (String bedtime, String wakeUpTime) {
 		System.out.println(bedtime + "~" + wakeUpTime + "까지 취침");
 	}
-	
-	void eat (String food) {
-		System.out.println(food + "먹음");
-	}
-	
-	void train () {
-		System.out.println("훈련!!");
-	}
-	
-	void setGameResult (int goalResult, int assistResult, int foulResult) {
-		goal += goalResult; // 누적 상황시 복합대입연산자 사용
-		assist += assistResult;
-		foul += foulResult;
-	}
-	
-	void moveTeam (String destinationTeam) {
-		team = destinationTeam;
-	}
 }
 
 public class A_ClassAndObject {
 	
-	// 전역 필드 (전역 변수)
-	// String team; 
+	String team; // 
 
 	public static void main(String[] args) {
 		
-		// 지역 변수
-		// String team; 
+		String team; // 
 		
-		// 인스턴스: 특정 클래스로 정의된 것을 실체화 한것 (객체)
-		// 클래스명 참조변수명 = new 클래스명();
-		ExampleClass1 instance1 = new ExampleClass1();
-		ExampleClass1 instance2 = new ExampleClass1();
 		
-		System.out.println(instance1);
-		System.out.println(instance2);
 		
-		// 인스턴스가 가지고 있는 속성 접근 방법
-		// 인스턴스.속성명;
-		instance1.attribute1 = 10;
-		instance1.attribute2 = 3.14;
-		System.out.println(instance1.attribute1);
-		System.out.println(instance1.attribute2);
-		System.out.println(instance2.attribute1);
-		System.out.println(instance2.attribute2);
 		
-		// 인스턴스가 가지고 있는 메서드 호출 방법
-		// 인스턴스.메서드();
+		
+		
+		
+		
+		
+		
 		
 		
 		
