@@ -102,26 +102,24 @@ class Drama {
 
 class TriangleMath {
 	
-	static final double PI = 3.14;
-	
-	static double getHypotenuse (int bottom, int height) {
+	double getHypotenuse (int bottom, int height) {
 		double result = Math.pow(bottom, 2) + Math.pow(height, 2); // 제곱하는 것 Math.pow(제곱하고자하는 것, 몇 제곱)
 		return Math.sqrt(result); // 제곱근(루트씌우는것) Math.sqrt
 	}
 	
-	static double getCircumference (int height, int bottom, int hypotenuse) {
+	double getCircumference (int height, int bottom, int hypotenuse) {
 		return height + bottom + hypotenuse;
 	}
 	
-	static double getSin (int height, int hypotenuse) {
+	double getSin (int height, int hypotenuse) {
 		return height / hypotenuse;
 	}
 	
-	static double getCos (int bottom, int hypotenuse) {
+	double getCos (int bottom, int hypotenuse) {
 		return bottom / hypotenuse;
 	}
 	
-	static double getTan (int height, int bottom) {
+	double getTan (int height, int bottom) {
 		return height / bottom;
 	}
 
@@ -166,10 +164,9 @@ public class A_Example {
 		star.getInfomation(); // 괄호가 붙으면 메서드이다.
 		
 		TriangleMath triangleMath = new TriangleMath();
-		double bit = TriangleMath.getHypotenuse(3, 4); // static으로 선언해서 사용하면 되는 경우 (클래스안에 인스턴스 변수 내부에 스테틱함수가 사용될 때)
+		double bit = triangleMath.getHypotenuse(3, 4);
 		System.out.println(bit);
 		
-		System.out.println(TriangleMath.PI);
 		
 		
 		

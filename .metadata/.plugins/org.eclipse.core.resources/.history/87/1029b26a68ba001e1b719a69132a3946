@@ -88,46 +88,10 @@ class Drama {
 			// true - actors[index] +", " / false - actors[index]
 		String actor = index < actors.length -1 ? actors[index] +", " : actors[index]; // 삼항연산자도 가능, 변수 선언해서 깔끔하게
 		System.out.print(actor);	
-		}
-		System.out.println(""); 
 	}
+	System.out.println("");
 }
-
-// TriangleMath
-// 빗변 구하기 - getHypotenuse
-// 둘레 구하기 - getCircumference
-// sin 구하기 - getSin
-// cos 구하기 - getCos
-// tan 구하기 - getTan
-
-class TriangleMath {
-	
-	static final double PI = 3.14;
-	
-	static double getHypotenuse (int bottom, int height) {
-		double result = Math.pow(bottom, 2) + Math.pow(height, 2); // 제곱하는 것 Math.pow(제곱하고자하는 것, 몇 제곱)
-		return Math.sqrt(result); // 제곱근(루트씌우는것) Math.sqrt
-	}
-	
-	static double getCircumference (int height, int bottom, int hypotenuse) {
-		return height + bottom + hypotenuse;
-	}
-	
-	static double getSin (int height, int hypotenuse) {
-		return height / hypotenuse;
-	}
-	
-	static double getCos (int bottom, int hypotenuse) {
-		return bottom / hypotenuse;
-	}
-	
-	static double getTan (int height, int bottom) {
-		return height / bottom;
-	}
-
 }
-
-
 public class A_Example {
 
 	public static void main(String[] args) {
@@ -164,21 +128,6 @@ public class A_Example {
 		star.series = 21;
 		
 		star.getInfomation(); // 괄호가 붙으면 메서드이다.
-		
-		TriangleMath triangleMath = new TriangleMath();
-		double bit = TriangleMath.getHypotenuse(3, 4); // static으로 선언해서 사용하면 되는 경우 (클래스안에 인스턴스 변수 내부에 스테틱함수가 사용될 때)
-		System.out.println(bit);
-		
-		System.out.println(TriangleMath.PI);
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 
