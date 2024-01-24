@@ -1,0 +1,58 @@
+package ch02;
+
+class ExampleClass2 {
+	
+	static int number = 3;
+	double doubleNumber;
+	
+	void method () {
+		int localNumber = 0;
+	}
+	
+	static void staticMethod () {
+		
+	}
+	
+}
+
+public class A_JVM {
+
+	public static void main(String[] args) {
+		
+		ExampleClass2 instance1 = new ExampleClass2();
+		ExampleClass2 instance2 = new ExampleClass2();
+		
+		int number = 0;
+		
+		instance1.method();
+		
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
