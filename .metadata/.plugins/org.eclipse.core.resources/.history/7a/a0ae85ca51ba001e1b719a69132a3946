@@ -49,49 +49,6 @@ class GalaxyPhone {
 	}
 }
 
-// Drama
-// 방송사:	(boardcastingCompany - String)
-// 제목:		(title - String)
-// 배우:		(actors - String[])
-// 장르:		(genre - String)
-// 시청률:	(viewerRating - double)
-// 부작:		(series - int)
-
-// 정보보기: getInfomation
-// ===== (title) =====
-// 방송사 : (boardcastingCompany)
-// 장르 : (genre)
-// 부작 : (series)부작
-// 시청률 : (viewerRating)%
-// 배우 : (actor), (actor), (actor)...
-
-class Drama {
-	String boardcastingCompany;
-	String title;
-	String[] actors;
-	String genre;
-	double viewerRating;
-	int series;
-	
-	void getInfomation () {				
-		System.out.println("=====" + title + "=====");
-		System.out.println("방송사: " + boardcastingCompany);
-		System.out.println("장르: " + genre); 
-		System.out.println("부작: " + series + "부작");
-		System.out.println("시청률: " + viewerRating +"%");
-		System.out.print("배우: ");
-		for(int index =0; index < actors.length; index++) {
-			//System.out.print(actors[index]);
-			//if (index < actors.length -1) System.out.print(", ");
-			
-			// index < actors.length -1  
-			// true - actors[index] +", " / false - actors[index]
-		String actor = index < actors.length -1 ? actors[index] +", " : actors[index]; // 삼항연산자도 가능, 변수 선언해서 깔끔하게
-		System.out.print(actor);	
-	}
-	System.out.println("");
-}
-}
 public class A_Example {
 
 	public static void main(String[] args) {
@@ -118,17 +75,6 @@ public class A_Example {
 		GalaxyPhone.emergency();
 		s23.emergency();
 		s24.emergency();
-		
-		Drama star = new Drama();
-		star.boardcastingCompany = "SBS";
-		star.title = "별에서 온 그대";
-		star.actors = new String[] {"전지현", "김수현", "박해진", "유인나"};
-		star.genre = "로맨스";
-		star.viewerRating = 28.1;
-		star.series = 21;
-		
-		star.getInfomation(); // 괄호가 붙으면 메서드이다.
-		
 	}
 
 }

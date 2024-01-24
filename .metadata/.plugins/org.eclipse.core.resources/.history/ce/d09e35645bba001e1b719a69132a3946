@@ -55,7 +55,7 @@ class ExampleClass1 {
 		System.out.println(staticAttribute);
 		
 		// method2();
-		// staticMethod();
+		staticMethod();
 	}
 	
 	// 생성자: 클래스의 인스턴스를 생성하는 순간에 호출되는 메서드
@@ -248,7 +248,7 @@ public class A_ClassAndObject {
 		instance1.staticMethod();
 		instance2.staticMethod();
 		
-		ExampleClass1 instance3 = new ExampleClass1();
+		
 		
 	}
 

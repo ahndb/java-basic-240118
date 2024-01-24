@@ -55,15 +55,9 @@ class ExampleClass1 {
 		System.out.println(staticAttribute);
 		
 		// method2();
-		// staticMethod();
+		staticMethod();
 	}
 	
-	// 생성자: 클래스의 인스턴스를 생성하는 순간에 호출되는 메서드
-	// 클래스와 같은 이름을 가지고있고, 반환타입이 존재하지 않음
-	// 클래스명 ([매개변수, ...]) { 인스턴스가 생성될 때 할 작업 }
-	ExampleClass1 () {
-		System.out.println("ExampleClass1 인스턴스 생성!!");
-	}
 }
 
 // 축구선수	(FootballPlayer)
@@ -248,7 +242,7 @@ public class A_ClassAndObject {
 		instance1.staticMethod();
 		instance2.staticMethod();
 		
-		ExampleClass1 instance3 = new ExampleClass1();
+		
 		
 	}
 

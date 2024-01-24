@@ -124,10 +124,10 @@ public class A_Example {
 		star.title = "별에서 온 그대";
 		star.actors = new String[] {"전지현", "김수현", "박해진", "유인나"};
 		star.genre = "로맨스";
-		star.viewerRating = 28.1;
-		star.series = 21;
+		star.viewerRating = 3.3;
+		star.series = 10;
 		
-		star.getInfomation(); // 괄호가 붙으면 메서드이다.
+		star.getInfomation();
 		
 	}
 
