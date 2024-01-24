@@ -112,14 +112,14 @@ class ExampleClass1 {
 	// number(); 메소드
 	// Number(); 생성자
 	
-	// 생성자도 메서드의 일종이기 때문에 오버로딩이 가능
 	ExampleClass1 () {
 		this.attribute1 = 99;
 		this.attribute2 = -99.99;
 	}
 	
 	ExampleClass1 (int attribute1) {
-		this(attribute1, -99.99); // 생성자
+		this.attribute1 = attribute1;
+		this.attribute2 = -99.99;
 	}
 
 	
