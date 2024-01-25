@@ -24,7 +24,7 @@ class Animal {
 	}
 }
 
-// Java에서는 클래스의 단일 상속만 지원함
+// Java 에서는 클래스의 단일 상속만 지원함
 // 다이아몬드 문제를 방지하기 위함
 // 다이아몬드 문제: 다중 상속을 했을 때 발생하는 메서드 호출의 모호성
 // 아래 코드에서 'extends Human, Animal' 형태로 다중 상속을 할 수 없음
@@ -44,6 +44,8 @@ class Developer extends Human {
 	}
 }
 
+// 모든 클래스는 'Object' 라고하는 최상위 클래스를 반드시 상속 받고 있음 
+
 public class B_Inheritance {
 
 	public static void main(String[] args) {
@@ -59,7 +61,7 @@ public class B_Inheritance {
 		teacher1.course = "국어";
 		teacher1.sleep();
 		teacher1.teach();
-		
+
 		Developer developer1 = new Developer();
 		developer1.name = "이영희";
 		developer1.age = 20;
