@@ -242,7 +242,8 @@ public class D_Control {
 		for (int number: numbers) {
 			System.out.println(number);
 		}
-		
+		System.out.println("------------------------");
+		System.out.println("------------------------");
 		// while: 반복할 횟수가 정해져있지 않을 떄 사용하는 반복문
 		// 조건이 true인 동안 반복, 조건이 false가 되면 반복 종료
 		input = 1;

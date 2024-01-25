@@ -25,7 +25,7 @@ class ExampleClass1 {
 	// 1. 매개변수 : O, 반환값 : O
 	int method1 (int arg1, int arg2) {
 		// 기능 구현
-		// 반환탄입이 void가 아니면 반드시 return으로 결과를 반환해야 함
+		// 반환탄입이 void 가 아니면 반드시 *return 으로 결과를 반환해야 함
 		return 0;
 	}
 	// 2. 매개변수 : X, 반환값 : O
