@@ -292,7 +292,7 @@ public class A_ClassAndObject {
 		
 		lee.moveTeam("수원 삼성");
 		lee.printInfomation();
-		
+				
 		son.printInfomation();
 		
 		// static 변수는 클래스로 직접 접근이 가능
