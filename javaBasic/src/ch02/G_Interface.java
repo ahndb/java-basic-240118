@@ -51,10 +51,36 @@ class MyMath implements AreaCalculation {
 
 }
 
+class MyMathV2 implements AreaCalculation {
+	
+	@Override
+	public double getTriangleArea(double bottom, double height) {
+		return bottom* height / 2;
+	}
+
+	@Override
+	public double getSquareArea(double side) {
+		return Math.pow(side, 2);
+	}
+
+	@Override
+	public double getRectangleArea(double bottom, double height) {
+		return bottom * height;
+	}
+
+	@Override
+	public double getCircleArea(double radius) {
+		return radius * radius * PI;
+	}
+}
+
 public class G_Interface {
 
 	public static void main(String[] args) {
-
+		
+		AreaCalculation instance = new MyMathV2();
+		
+		
 	}
 
 }

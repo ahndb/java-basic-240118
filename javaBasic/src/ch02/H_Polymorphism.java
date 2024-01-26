@@ -39,6 +39,11 @@ public class H_Polymorphism {
 		Human1 human2 = new Developer1();
 		Human1 human3 = new FootballPlayer1();
 		
+		// Object 클래스의 참조변수는 어떠한 클래스의 인스턴스도 받을 수 있음
+				Object object1 = new Human1();
+				Object object2 = new Developer1();
+				Object object3 = new FootballPlayer1();		
+		
 		FootballPlay football = new FootballPlayer1(); // 업캐스팅부터 여기까지라도 기억하자
 		
 		// human2.position ="";
@@ -46,6 +51,9 @@ public class H_Polymorphism {
 		// 다운캐스팅: 업캐스팅된 객체를 다시 원래의 타입의 참조변수에 담을 수 있도록 변환하는 것
 		Developer1 developer2 = (Developer1)human2;
 		developer2 .posision = "";
+		// 업캐스팅 한것을 다운캐스팅 하고 다시 업캐스팅 할 수 있다.
+		// 다운캐스팅만하고 업캐스팅 불가능
+		
 		
 		FootballPlayer1 fp = new FootballPlayer1();
 		fp.name = "홍길동";
@@ -56,22 +64,24 @@ public class H_Polymorphism {
 		System.out.println(fp.name);
 		System.out.println(fp.goal);
 		
-		Human1 hm = fp;
+		Human1 hm = fp; // 업캐스팅
 		System.out.println(hm);
 		System.out.println(hm.name);
 		// System.out.println(hm.goal);
 		// hm.kick();
 		
-		FootballPlayer1 fpp = (FootballPlayer1) hm;
+		FootballPlayer1 fpp = (FootballPlayer1) hm; // 다운캐스팅
 		System.out.println(fpp);
 		System.out.println(fpp.name);
 		System.out.println(fpp.goal);
 		
-		Human1 hmm = new Human1();
-		Developer1 dev = (Developer1) hmm;
+		Human1 hmm = new Human1(); // 인스턴스 생성
+		Developer1 dev = (Developer1) hmm; // 다운캐스팅
 		
 		dev.posision = "포지션";
-		System.out.println(dev.posision);
+		System.out.println(dev.posision); // 부모클래스의 인스턴스는 자식클래스에 담을 수 없다.
+		
+		
 		
 	}
 
