@@ -72,7 +72,7 @@ class Drama {
 	String genre;
 	double viewerRating;
 	int series;
-	
+
 	void getInfomation () {				
 		System.out.println("=====" + title + "=====");
 		System.out.println("방송사: " + boardcastingCompany);
@@ -83,7 +83,7 @@ class Drama {
 		for(int index =0; index < actors.length; index++) {
 			//System.out.print(actors[index]);
 			//if (index < actors.length -1) System.out.print(", ");
-			
+
 			// index < actors.length -1  
 			// true - actors[index] +", " / false - actors[index]
 		String actor = index < actors.length -1 ? actors[index] +", " : actors[index]; // 삼항연산자도 가능, 변수 선언해서 깔끔하게
@@ -101,32 +101,32 @@ class Drama {
 // tan 구하기 - getTan
 
 class TriangleMath {
-	
+
 	static final double PI = 3.14;
-	
+
 	static double getHypotenuse (int bottom, int height) {
 		if (bottom <= 0 || height <= 0) return 0;  
 		// if (!(bottom > 0 && height > 0)) return 0; 매개변수의 유효성 검사 
-		
+
 		double result = Math.pow(bottom, 2) + Math.pow(height, 2); // 제곱하는 것 Math.pow(제곱하고자하는 것, 몇 제곱)
 		return Math.sqrt(result); // 제곱근(루트씌우는것) Math.sqrt
 	}
-	
+
 	static double getCircumference (int height, int bottom, int hypotenuse) {
 		if (bottom <= 0 || height <= 0 || hypotenuse <= 0) return 0;  
 		return height + bottom + hypotenuse;
 	}
-	
+
 	static double getSin (int height, int hypotenuse) {
 		if (hypotenuse <= 0 || height <= 0) return 0;  
 		return height / hypotenuse;
 	}
-	
+
 	static double getCos (int bottom, int hypotenuse) {
 		if (bottom <= 0 || hypotenuse <= 0) return 0;  
 		return bottom / hypotenuse;
 	}
-	
+
 	static double getTan (int height, int bottom) {
 		if (bottom <= 0 || height <= 0) return 0;  
 		return height / bottom;

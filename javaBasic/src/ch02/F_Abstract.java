@@ -16,7 +16,7 @@ package ch02;
  경험치: 정수
  */
 
-/*  
+/* 기능
  대화 - 입력 : (메시지 - 문자열) /  출력 : void
  사냥 - 입력 : (수치 - 정수) / 출력 : (경험치 - 정수)
 */
@@ -27,6 +27,8 @@ abstract class Player {
 	String gender;
 	double experience;
 	
+	// 추상클래스에서도 생성자를 만들 수는 있지만
+	// 하위클래스에서 호출하는 용도로만 사용
 	Player(String name, String species, String gender, double experience) {
 		super();
 		this.name = name;
@@ -78,11 +80,13 @@ public class F_Abstract {
 	public static void main(String[] args) {
 		
 		// 추상클래스는 인스턴트를 생성할 수 없음, 하지만 변수로 선언은 가능하다.
-		// Player player = new Player();
+		// Player player = new Player("이름", "인간", "남", 0);
 		
 		// 반드시 추상클래스를 상속하여 구현한 하위클래스로 인스턴스를 생성
 		Dealer dealer = new Dealer("이름", "인간", "남", 0);
 		Tanker tanker = new Tanker("이름", "인간", "남", 0);
+		
+
 	}
 
 }
