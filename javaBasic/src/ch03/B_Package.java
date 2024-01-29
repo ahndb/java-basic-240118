@@ -1,10 +1,13 @@
 package ch03;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class B_Package {
@@ -85,6 +88,63 @@ public class B_Package {
 		
 		// contains(): Set 에서 특정 요소가 존재하는지 확인
 		System.out.println(set.contains("Banana"));
+		
+		// Map: 키와 값이 한쌍으로 이루어진 요소들의 집합 
+		//		키는 중복 불가능, 값은 중복 가능
+		Map<String, String> map;
+		// HashMap: 해싱기법으로 키의 검색 속도가 빠름
+		// map = new HashMap<>();
+		// TreeMap: 키를 정렬하여 저장
+		map = new TreeMap<>();
+		
+		// put(): Map 에 키와 값을 추가
+		// 만약 동일한 키가 존재한다면 해당 키의 값을 변경
+		map.put("Apple", "사과");
+		System.out.println(map);
+		map.put("Banana", "바나나");
+		System.out.println(map);		
+		map.put("Apple", "링고");
+		System.out.println(map);
+		map.put("Banana1", "바나나");
+		System.out.println(map);
+		
+		// get(): Map 에서 특정 키를 가지는 요소를 반환
+		// 존재하지 않는 키로 검색할 경우 null 을 반환
+		System.out.println(map.get("Apple"));
+		
+		// remove(): Map 에서 특정 키를 가지는 요소를 제거
+		// remove 작업에 성공하면 해당 키의 값을 반환
+		System.out.println(map.remove("Apple"));
+		
+		class Human {
+			String name;
+			String address;
+			int age;
+		}
+		
+		Human human1 = new Human();
+		human1.name = "홍길동";
+		human1.address = "부산광역시 진구";
+		human1.age = 10;
+		// name = "홍길동"
+		// address = "부산광역시 진구"
+		// age = 10
+		Map<String, Object> human2 = new HashMap();
+		human2.put("name", "홍길동");
+		human2.put("address", "부산광역시 진구");
+		human2.put("age", "열살");
+			
+		// 1 문제점: 사용 혹은 추가할때 오타(실수)에 대한 가능성
+		human2.get("nmae");
+		// 2 문제점:
+		Integer age = (Integer) human2.get("age");
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 
