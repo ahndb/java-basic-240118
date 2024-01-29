@@ -13,7 +13,9 @@ import java.util.Scanner;
 // catch (예외클래스 예외인스턴스) { 특정 예외가 발생할 때 실행할 구문 }
 public class A_Exception {
 
+	// throws 를 통해서 호출부에 예외처리에 대한 강제성 부여
 	private void throwException () throws Exception {
+		// throw 를 통해서 강제로 예외를 발생
 		throw new NullPointerException("널포인터 예외!!");
 	}
 	
@@ -48,7 +50,7 @@ public class A_Exception {
 			instance.throwException();
 		} catch (Exception exception) {
 			
-			exception.printStackTrace();
+			exception.printStackTrace(); 
 		}
 		
 		System.out.println("프로그램이 정상적으로 종료되었습니다.");
