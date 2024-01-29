@@ -136,7 +136,7 @@ public class B_Package {
 			
 		// 1 문제점: 사용 혹은 추가할때 오타(실수)에 대한 가능성
 		human2.get("nmae");
-		// 2 문제점:
+		// 2 문제점: 타입의 안정성 문제
 		Integer age = (Integer) human2.get("age");
 		
 		
