@@ -3,6 +3,13 @@ package ex01;
 import java.util.Scanner;
 
 public class B_MagicSquare {
+	
+	// 조건
+	// 1. 1을 가장 윗줄의 중간에 배치
+    // 2. 이후의 숫자들은 이전 숫자의 오른쪽 상단에 배치
+    // 3. 숫자가 마방진의 범위를 벗어날 경우, 반대편으로 숫자를 옮김
+    // 4. 이미 숫자가 있는 칸으로 이동하려 할 때는 바로 아래 칸에 숫자를 배치
+	
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int size = 3;
