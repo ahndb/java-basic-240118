@@ -1,5 +1,12 @@
 package ch03;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Random;
+import java.util.Set;
+import java.util.TreeSet;
+
 public class B_Package2 {
 
 	public static void main(String[] args) {
@@ -20,7 +27,79 @@ public class B_Package2 {
 		
 		// 특정 소수점 자리에서 올림, 내림, 반올림
 		System.out.println( Math.round(3.1415 * 100) / 100.0 ); // 소수점 세번째 자리에서 반올림
-
+		
+		// 최소값 메서드: min()
+		System.out.println(Math.min(10, 20));
+		
+		// 최대값 메서드: max()
+		System.out.println(Math.max(10, 20));
+		
+		// 거듭제곱값 메서드: pow()
+		System.out.println(Math.pow(10, 3));
+		
+		// 제곱근값 메서드: sqrt()
+		System.out.println(Math.sqrt(100));
+		
+		System.out.println("====================================================");
+		
+		// Random 클래스: 난수를 생성해주는 클래스
+		Random random = new Random();
+		System.out.println(random.nextInt());
+		// 범위 제약
+		System.out.println(random.nextInt(45)); // 0 ~ 지정한 숫자-1까지 사이가 나옴
+		System.out.println(random.nextInt() % 45);
+		
+		// Lotto: 1 ~ 45, 중복 없는 6개의 수
+		
+		
+		for(int count = 0; count <5; count++) {
+			Set<Integer> lotto = new TreeSet<>();
+			
+			while (lotto.size() < 6) {
+				int number = random.nextInt(45) + 1;
+				lotto.add(number);
+			}
+			System.out.println(lotto);
+		}
+		
+		System.out.println("====================================================");
+		
+		// 연금복권: 1-5조 0~9 중복허용 6자리수
+		List<Integer> annuity = new ArrayList<>();
+		
+		int jo = random.nextInt(5)+1;
+		annuity.add(jo);
+		for (int count = 0; count < 6; count++) {
+			int number = random.nextInt(10);
+			annuity.add(number);
+		}
+			System.out.println(annuity);
+		
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
