@@ -135,13 +135,13 @@ public class B_Package2 {
 		// LocalDateTime -> String
 		dateString = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		System.out.println(dateString);
+
+		int number = 0;
+		int[] numbers = new int[number];
 		
 	}
 
 }
-
-
-
 
 
 
