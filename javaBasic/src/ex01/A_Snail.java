@@ -5,18 +5,23 @@ import java.util.Scanner;
 public class A_Snail {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int size = 3;
+     // 변수 초기화
+        int size = 3; 
 
+        // 입력값 받기
         try {
             size = scanner.nextInt();
         } catch (Exception exception) {
             return;
         }
 
+        // 3미만의 경우 팅겨내기
         if (size < 3) return;
 
+        // snailArray 배열에 createSnail 메소드로 접근
         int[][] snailArray = createSnail(size);
-        
+        //                                 3
+      // foreach
         for (int[] row : snailArray) {
             for (int value : row) System.out.print(value + " ");
             System.out.println();
