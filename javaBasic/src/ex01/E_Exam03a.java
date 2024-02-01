@@ -1,6 +1,6 @@
-package ch02;
+package ex01;
 
-public class A_JVM {
+public class E_Exam03a {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

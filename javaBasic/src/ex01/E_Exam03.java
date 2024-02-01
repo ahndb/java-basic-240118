@@ -19,6 +19,6 @@ public class E_Exam03 {
 		
 		Number number = new Number();
 		
-		System.out.println(number.solution(-123456789));	
+		System.out.println(number.solution());	
 	}
 }

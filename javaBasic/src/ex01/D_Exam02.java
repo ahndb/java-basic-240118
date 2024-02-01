@@ -3,24 +3,11 @@ package ex01;
 class Array {
 	static int [] array;
 	static int [][] queries;
-
-
 	int i;
  public static int[] solution (int[] array) {
-	 if
-	 
+	 for (int i= 0; i <queries.length; i++)
 	 
 	 return array;
- }
- 
- public static int[] queries (int[][] queries){
-	int s;
-	int e;
-	int[][] queries = [s][e];
-	
-	query 
-	 
-	return array; 
  }
 }
 
