@@ -1,26 +1,27 @@
 package ex01;
 
-import java.util.List;
-
-class NumList {
-	
-	List<Integer> numList;
-	
-	public static int solution (int[] solution) {
-			for (int i = 0; i < solution.length; i++) {
-				if(solution[i] < 0)
-					return i;
-				if (solution[i] >= 0) return -1;
-			}
-			return 0;
-	}
-}
-
 public class C_Exam01a {
-
 	public static void main(String[] args) {
 
-		NumList numlist = new NumList();
-		System.out.println(numlist.solution());	
+		// 문제 설명
+
+		// 정수 리스트 numList가 주어질 때, 첫 번째로 나오는 음수의 인덱스를 return하도록 solution 메서드를 완성하시오. 음수가 없다면 -1을 return한다.
+		// 메서드의 반환 타입은 정수 타입이고 메서드명은 solution, 매개변수의 타입은 정수의 배열로 받으면서 접근 제어는 모든 패키지에서 사용할 수 있도록 하며 오버라이딩이 가능하고 구현부가 존재하는 인스턴스 메서드로 작성하시오.
+
+		// 제한사항
+
+		// 5 ≤ numList의 길이 ≤ 100
+		// -10 ≤ numList의 원소 ≤ 100
+
+		// 입출력 예
+
+		// [12, 4, 15, 46, 38, -2, 15] → 5
+		// [13, 22, 53, 24, 15, 6] → -1
+
+		    public int solution(int[] numberList) {
+		        for (int index = 0; index < numberList.length; index++)
+		            if (numberList[index] < 0) return index;
+		        return -1;
+		    
 	}
 }
