@@ -7,6 +7,8 @@ public class CheckIdResponseDto {
 	private Code code;
 	private String data;
 	
+	public CheckIdResponseDto() {}
+	
 	public CheckIdResponseDto(Code code, String data) {
 		this.code = code;
 		this.data = data;
