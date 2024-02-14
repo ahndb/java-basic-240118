@@ -46,9 +46,9 @@ public class App {
 					continue;
 				}
 				
-				
-				
+				System.out.println("사용 가능한 아이디입니다.");
 				// 2. 이메일 인증 코드 전송
+				
 				// 3. 이메일 인증 처리
 				// 4. 회원가입 처리
 			}
