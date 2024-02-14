@@ -1,35 +1,59 @@
 package com.sanghyun.realEstate;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.util.Scanner;
+
+import com.sanghyun.realEstate.interfaces.Code;
+
+// Controller (package / interface) : 입력과 출력을 담당하는 요소
+// Service (package / interface) : 실제 비지니스 로직 (연산)
+// Repository (package / interface) : 데이터베이스 연결과 관련된 작업
+
+// DTO (Data Transfer Object) : 데이터 전송을 위한 객체
+// Entity : 데이터베이스의 테이블을 자바 클래스로 표현한 객체
 
 public class App {
 
 	public static void main(String[] args) {
-		// JDBC와 MySQL Connector 를 이용하여 MySQL연결
-		// JDBC: Java Database Connectivity
-		// Java 에서 데이터베이스와 연결할 수 있도록 도움을 주는 Java API
-		// Java 에서 SQL 쿼리나 쿼리 결과를 사용할 수 있도록 하는 방법을 제공
+		Scanner scanner = new Scanner(System.in);
 		
-		try {
-		
-			// 1. 드라이버 로드			
-			Class.forName("com.mysql.cj.jdbc.Driver");
+		while (true) {
+			System.out.print("1. 회원가입 / 2. 로그인 / 3. 게시물 작성 / 4. 게시물 보기 / 5. 종료 : ");
+			String input = scanner.nextLine();
 			
-			// 2. 데이터베이스 연결
-			final String URL = "jdbc:mysql://127.0.0.1:3306/real_estate";
-			final String USER_NAME = "root";
-			final String USER_PASSWORD = "root";
-			
-			Connection connection = DriverManager.getConnection(URL, USER_NAME, USER_PASSWORD);
-			System.out.println("연결 완료");
-			
-		} catch (Exception exception) {
-			
-			exception.printStackTrace();
-			
+			if (input.equals("1")) System.out.println(Code.SU); 
+			if (input.equals("2")) System.out.println("로그인"); 
+			if (input.equals("3")) System.out.println("게시물 작성"); 
+			if (input.equals("4")) System.out.println("게시물 보기"); 
+			if (input.equals("5")) break; 
 		}
+		
+		System.out.println("프로그램 종료");
 		
 	}
 
 }
+
+// 아이디 중복 확인
+// 입력: 아이디 (request)
+// 출력: (response)
+
+// 성공
+// 실패
+//- 중복된 아이디
+//- 데이터베이스 에러
+
+// 프로세스:
+//- user 테이블에서 입력받은 아이디로 조회한 결과가 존재하면 중복, 존재하지 않으면 사용가능
+
+
+
+
+
+
+
+
+
+
+
+
+
