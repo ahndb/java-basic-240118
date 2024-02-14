@@ -7,8 +7,11 @@ import com.sanghyun.realEstate.controller.implement.AuthControllerImplement;
 import com.sanghyun.realEstate.dto.request.CheckIdRequestDto;
 import com.sanghyun.realEstate.dto.request.SendCodeRequestDto;
 import com.sanghyun.realEstate.dto.response.CheckIdResponseDto;
+import com.sanghyun.realEstate.dto.response.SendCodeResponseDto;
 import com.sanghyun.realEstate.interfaces.Code;
+import com.sanghyun.realEstate.repository.EmailAuthenticationRepository;
 import com.sanghyun.realEstate.repository.UserRepository;
+import com.sanghyun.realEstate.repository.implement.EmailAuthenticationRepositoryImplement;
 import com.sanghyun.realEstate.repository.implement.UserRepositoryImplement;
 import com.sanghyun.realEstate.service.AuthService;
 import com.sanghyun.realEstate.service.implement.AuthServiceImplement;
@@ -26,7 +29,8 @@ public class App {
 		Scanner scanner = new Scanner(System.in);
 		
 		UserRepository userRepository = new UserRepositoryImplement(); // 생성자로 의존성을 주입을 위해 적어둠
-		AuthService authService = new AuthServiceImplement(userRepository); // 생성자로 의존성을 주입을 위해 적어둠
+		EmailAuthenticationRepository emailAuthenticationRepository = new EmailAuthenticationRepositoryImplement();
+		AuthService authService = new AuthServiceImplement(userRepository, emailAuthenticationRepository); // 생성자로 의존성을 주입을 위해 적어둠
 		AuthController authController = new AuthControllerImplement(authService); // 생성자로 의존성을 주입을 위해 적어둠
 		
 		while (true) {
@@ -71,6 +75,26 @@ public class App {
 				
 				SendCodeRequestDto sendCodeRequest = new SendCodeRequestDto();
 				sendCodeRequest.setEmail(email);
+				
+				SendCodeResponseDto sendCodeResponse = authController.sendCode(sendCodeRequest);
+				code = sendCodeResponse.getCode();
+				
+				if (code == Code.VF) {
+					System.out.println("잘못된 입력입니다.");
+					continue;
+				}
+				
+				if (code == Code.DE) {
+					System.out.println("중복된 이메일 입니다.");
+					continue;
+				}
+				
+				if (code == Code.DBE) {
+					System.out.println("데이터베이스 에러입니다.");
+					continue;
+				}
+				
+				System.out.println(sendCodeResponse.getData());
 				
 				// 3. 이메일 인증 처리
 				// 4. 회원가입 처리
