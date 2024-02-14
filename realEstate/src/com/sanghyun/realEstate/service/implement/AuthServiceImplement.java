@@ -7,9 +7,13 @@ import com.sanghyun.realEstate.repository.UserRepository;
 import com.sanghyun.realEstate.repository.implement.UserRepositoryImplement;
 import com.sanghyun.realEstate.service.AuthService;
 
-public class AuthServiceImplement implements AuthService {
+public class AuthServiceImplement implements AuthService { // 매개변수 받아오고 실제 처리 함
 	
-	private UserRepository userRepository = new UserRepositoryImplement();
+	private UserRepository userRepository;
+	
+	public AuthServiceImplement (UserRepository userRepository) {
+		this.userRepository = userRepository; // 생성자로 의존성을 주입하기
+	}
 
 	@Override
 	public CheckIdResponseDto checkId(CheckIdRequestDto dto) {

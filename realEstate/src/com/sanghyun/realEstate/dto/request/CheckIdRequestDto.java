@@ -12,4 +12,9 @@ public class CheckIdRequestDto {
 		this.id = id;
 	}
 	
+	public boolean validId() {
+		boolean valid = id.length() <= 20;
+		return valid;
+	}
+	
 }
